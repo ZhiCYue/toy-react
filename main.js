@@ -116,7 +116,7 @@ class Game extends Component {
                 </div>
                 <div className="game-info">
                     <div>{status}</div>
-                    <ol>{moves}</ol>
+                    {/* <ol>{moves}</ol> */}
                 </div>
             </div>
         );
@@ -126,6 +126,8 @@ class Game extends Component {
 // ========================================
 
 ToyReact.render(<Game />, document.body);
+// let game = <Game />
+// console.log(game.vdom);
 
 function calculateWinner(squares) {
     const lines = [
